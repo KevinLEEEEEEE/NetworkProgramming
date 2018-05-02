@@ -18,8 +18,9 @@
 >> - [ ] further develope the clip function the performance
 >> - [x] write a stateMachine for the control of states
 >> - [x] ensure the usability of the front desk
->> - [ ] errorHandler module(consoleError haha!)
+>> - [x] errorHandler module(consoleError haha!)
 >> - [ ] the proformance of the website
+>> - [ ] some points I can't call back to my mind, a pity
 
 > <h5>End Desk</h5>
 
