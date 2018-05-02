@@ -51,7 +51,7 @@
 
 <h4>> PART2: Front desk</h4>
 <img src="http://imgsrc.baidu.com/forum/w%3D580/sign=7026d9415f43fbf2c52ca62b807fca1e/570ec334970a304e93655cb3ddc8a786c8175cc2.jpg" />
-<p>Here is the file structure, owing to the use of <b>Vue.js</b> and <b>webpack</b>, I use the engineering developed, butthat's not thatmajor part, I wrote the notes everywhere in the js file, so, more detailed information can be found there, I will focus on the <b>stateMachine</b> build inside the programe, it is a vital part, here is the code:</p>
+<p>Here is the file structure, owing to the use of <b>Vue.js</b> and <b>webpack</b>, I use the engineering developed, but that's not the   major part, I wrote the notes everywhere in the js file, so, more detailed information can be found there, I will focus on the <b>stateMachine</b> build inside the programe, it is a vital part, here is the code:</p>
 
 ```javascript
   export default function (machine, that) {
