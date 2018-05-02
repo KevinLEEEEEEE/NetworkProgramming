@@ -109,7 +109,7 @@
 }
  ```
  
- <p>with build in notes, it's not difficult to understand, and with the basic function, I sitll create a Object especially for the ckeck function, to ensure the stateMachine is Strong when created and warn the possible mistake made inadvertently</p>
+ <p>with build in notes, it's not difficult to understand, and with the basic function, I sitll create a Object <b>especially for the ckeck ability</b>, to ensure the stateMachine is <b>strong enoug</b> after created and warn the possible mistake made inadvertently</p>
  
   ```javascript
   const StMaTest = {
@@ -163,8 +163,9 @@
   },
 };
 ```
-  
-  <p>That's all for the stateMachine, then comes the special dish - color Analysis feature, it's a webworker(thread) which pick up the major color of the image then report to the server for the actualization of searching and filtering the image by color, that a common demand when an artist what to find more pictures according to the use of color, tone, color tendencies and so on, codes are as follows</p>
+
+<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=f11ecca8232eb938ec6d7afae56385fe/780a8cf41bd5ad6e783daba38dcb39dbb7fd3c41.jpg" />
+  <p>That's all for the stateMachine, then comes the special dish - <b>color Analysis feature</b>, it's a webworker(thread) which pick up the major color of the image then report to the server for the actualization of searching and filtering the image by color, that a common demand when an artist what to find more pictures <b>according to the use of color, tone, color tendencies</b> and so on, codes are as follows</p>
  
 ```javascript
 import work from 'webworkify-webpack';
@@ -189,7 +190,7 @@ const colorManager = {
 export default colorManager;
 ```
 
-<p>this allows the program to start a new thread to deal with the color data, about 5 million RGB info(done in 2 seconds)</p>
+<p>this allows the program to <b>start a new thread</b> to deal with the color data, about 5 million RGB info(done in 1 seconds), not a high score, but acceptable on the V8 engine</p>
 
 ```javascript
 const _colorAnalysis = {
@@ -373,12 +374,14 @@ export default function worker(self) {
 }
 ```
 
-<p>Generally speaking, the main algorithm is to calculating the average value. May be, somewhere out there, there existing a better and more accurate methods to handle the info, but that's not the point, though with that said, I still make a tiny effort to make it runs better.  Imagine an occasion, when some color in the image is a tiny fraction of the overall data, but that color is so distinguished that, regardless of its amount, it should be considered a major color of the image.</p>
+<p>Generally speaking, <b>the main algorithm is to calculating the average value</b>. May be, somewhere out there, there existing a better and more accurate methods to handle the info, but that's not the point, though with that said, I still make a tiny effort to make it runs better.  Imagine an occasion, when some color in the image is a tiny fraction of the overall data, <b>but that color is so distinguished that, regardless of its amount, it should be considered a major color of the image.</b></p>
 
-<p>So, the simple "average value" doesn't work so well on that condition, then I add the concept of "distance" in to consideration, beacuse that the analysis is running under the HSV color gamut, we can simply use the H part, then calculate the "distance" of specific by </p>
+<p>So, the simple "average value" doesn't work so well on that condition, then I add <b>the concept of "distance" in to consideration</b>, beacuse that the analysis is running under the HSV color gamut, we can simply use the H part, then calculate the "distance" of specific by </p>
 
 ```javascript
 finalObj[tmp] = Math.round((2 ** (distance / gap)) * (currentAmount / pixelAmount)) / 100;
 ```
 
-<p>In that way, both the <b>"AMOUNT"</b> and the <b>"particularity"</b> become the measure</p>
+<p>In that way, both the <b>"AMOUNT"</b> and the <b>"PARTICULARITY"</b> become the decisive measure, unfortunately, the result is not that optimistic, even a little bad, that's furter talk, the solution will appears at the bottom the the article as links</p>
+
+
