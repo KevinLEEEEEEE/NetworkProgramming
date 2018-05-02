@@ -6,7 +6,7 @@
         <li><router-link to="/upload">Upload</router-link></li>
       </ul>
     </nav>
-    <div id="main" :style="bg">
+    <div id="main">
       <div>
         <div id="search" class="box">
           <input type="text"
@@ -26,7 +26,6 @@
 </template>
 
 <script>
-import bg from '../static/bg.jpg';
 import searchBtn from '../static/searchBtn.png';
 import uploadBtn from '../static/uploadBtn.png';
 import addBtn from '../static/addBtn.png';
@@ -35,9 +34,6 @@ export default {
   name: 'App',
   data() {
     return {
-      bg: {
-        backgroundImage: `url(${bg})`,
-      },
       searchBtn: {
         backgroundImage: `url(${searchBtn})`,
       },
@@ -78,6 +74,7 @@ nav {
   left: 0;
   right: 0;
   height: 60px;
+  background: rgba(0, 0, 0, .1);
 }
 nav ul {
   display: flex;
@@ -97,9 +94,7 @@ nav li {
   width: 100%;
   min-width: 2000px;
   height: 900px;
-  background: center;
-  background-size: cover;
-  background: gray;
+  background-color: lightblue;
 }
 #main > div {
   margin: 5px;
