@@ -2,7 +2,7 @@
 <p>This is the first time that I deal with the README of my programe in English, so mistakes are inevitable, please read with patience and tolerance.And as I thought out and wrote this message simultaneously, complex languang structure will not be adopted!Tnanks.</p>
 
 
-<h3>> the goals achieved and the opposite:</h3>
+<h2>> the goals achieved and the opposite:</h2>
 
 > <h5>Design</h5>
 
@@ -29,7 +29,7 @@
 >> - [x] the development of listManager(simple version of database)
 
 
-<h3>> the following content consists of three major parts:</h3>
+<h2>> the following content consists of three major parts:</h2>
 <ul>
   <li>the design and art work:  <i>brief description of the design of the webpages</i></li>
   <li>the front desk:  <i>the major part, detailed information</i></li>
@@ -445,3 +445,30 @@ const _fileManager = {
 
 
 <h2>FAQ</h2>
+<ol>
+  <li>
+    <p>Q: Can I open the file and view the result directlly?</p>
+    <p>A: Noop~, run <b>"npm install" first</b></p>
+  </li>
+   <li>
+    <p>Q: After that, can I?</p>
+    <p>A: Noop~, this is an unfinished project, the further development didn't match the previous design, and when I realize that, the only choice is nothing but rewite the enire project</p>
+<img src="https://gss0.bdstatic.com/-4o3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=6ddc9ea36481800a7ae8815cd05c589f/8601a18b87d6277f22ab551420381f30e924fc65.jpg" />
+     <p>But that impossible to rewite it, so, that what appears, you could run <b>"npm run dev"</b> and <b>"cd server" + "node app"</b> to run the saperate server and upload and download the image</p>
+   </li>
+  <li>
+    <p>Q: I did what you said, why can't I download the image?</p>
+    <p>A: When you download the image, the broswer send a copy of file list, which record the files you have downloaded and the files you uploaded, so unless you open a dozen of broswer or close and open a new window, you just can't get any file! heihei!</p>
+  </li>
+    <li>
+    <p>Q: Where is the search function?</p>
+    <p>A: No that function, OK! This an assignment, not my "dachuang", and the result of color analysising didn't meet my expectation, so I decided to cut off that function, or the total code lines are to meet 2000, that became hard to manage</p>
+  </li>
+</ol>
+
+
+<h4>After all, I find a billion, a trillion loopholes in my programming ability, so I decided to "relearn" most of the existing knowledge and see you in summer vacation!</h4>
+
+
+<h2>Reference</h2>
+<h3>aaaaaa, too much to list, if you want some of the data, contect mw with QQ, welcome and discussion concerning: <b>"front desk"</b>, <b>"end desk"</b>,  <b>"Vue.js"</b>,  <b>"cocos creater - a game engine based on javascript"</b>, and wish you a happy college life~</h3>
