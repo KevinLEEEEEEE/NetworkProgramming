@@ -250,7 +250,11 @@ const _colorAnalysis = {
     return finalObj;
   },
 };
+```
 
+<p>To transition color data between HSV and RGB, you know the javascript is pool in high precision calculation, so the normal formula didn't work, that all, the F*** work!</p>
+
+```javascript
 const colorAnalysis = {
   rgbToHSV(r, g, b) {
     let h;
@@ -345,7 +349,11 @@ const colorAnalysis = {
     };
   },
 };
+```
 
+<p>The external interface</p>
+
+```javascript
 export default function worker(self) {
   self.addEventListener('message', (event) => {
     const maxRGBArray = [];
@@ -384,4 +392,56 @@ finalObj[tmp] = Math.round((2 ** (distance / gap)) * (currentAmount / pixelAmoun
 
 <p>In that way, both the <b>"AMOUNT"</b> and the <b>"PARTICULARITY"</b> become the decisive measure, unfortunately, the result is not that optimistic, even a little bad, that's furter talk, the solution will appears at the bottom the the article as links</p>
 
+<p>That's all for the front desk~</p>
 
+
+
+<h4>> PART3: End desk</h4>
+
+<p>Not much to talk, I have no further study on this part, the thumbnail is the only dessert, which produce a <b>"image_small.type"</b> with the maxWidth and maxHeight in <b>"300px"</b> so the website could read the compressed file first <b>to avoid too much consumption</b></p>
+
+```javascript
+const _fileManager = {
+  rename(oldPath, author, imgName, tags, colorData, type, resolve, reject) {
+    const md5 = this.getMD5(author, imgName, tags);
+    const newPath = path.join(__dirname, `../dist/img/${md5}.${type}`);
+    fs.rename(oldPath, newPath, (err) => {
+      if (err) {
+        console.log('rename error');
+        reject(err);
+      } else {
+        this.thumbnail(md5, newPath, type);
+        console.log('rename and move file successfully');
+        resolve({
+          author,
+          imgName,
+          md5,
+          tags,
+          type,
+          colorData,
+        });
+      }
+    });
+  },
+  getMD5(author, imgName, tags) {
+    return MD5(author + imgName + tags + new Date()).words.join('');
+  },
+  thumbnail(md5, newPath, type) {
+    gm(newPath)
+      .resize(300, 300, '>')
+      .strip()
+      .autoOrient()
+      .write(path.join(__dirname, `../dist/img/${md5}_small.${type}`),
+        (err) => {
+          if (err) {
+            console.log(`resize error: ${err}`);
+          }
+        });
+  },
+};
+```
+
+<p>That's all for the end desk</p>
+
+
+<h2>FAQ</h2>
