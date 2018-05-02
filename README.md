@@ -1,25 +1,14 @@
 # NetworkProgramming
 <p>This is the first time that I deal with the README of my programe in English, so mistakes are inevitable, please read with patience and tolerance.And as I thought out and wrote this message simultaneously, complex languang structure will not be adopted!Tnanks.</p>
-# vuexpress
-
-> A Vue.js project
 
 <h2>> the goals achieved and the opposite:</h2>
-## Build Setup
 
 > <h5>Design</h5>
-``` bash
-# install dependencies
-npm install
 
 >> - [x] the simple design: user interface
 >> - [ ] the further design: user's experience
-# serve with hot reload at localhost:8080
-npm run dev
 
 > <h5>Front Desk</h5>
-# build for production with minification
-npm run build
 
 >> - [x] the use of Vue.js
 >> - [ ] the perfect use of components and modular programming
@@ -45,7 +34,7 @@ npm run build
   <li>the design and art work:  <i>brief description of the design of the webpages</i></li>
   <li>the front desk:  <i>the major part, detailed information</i></li>
   <li>the end desk:  <i>nodejs - express</i></li>  
- </ul>
+</ul>
  
 
 <h4>> PART1: Design</h4>
