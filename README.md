@@ -1,13 +1,40 @@
 # NetworkProgramming
 <p>This is the first time that I deal with the README of my programe in English, so mistakes are inevitable, please read with patience and tolerance.And as I thought out and wrote this message simultaneously, complex languang structure will not be adopted!Tnanks.</p>
 
+
+<h3>> the goals achieved and the opposite:</h3>
+
+> <h5>Design</h5>
+
+>> - [x] the simple design: user interface
+>> - [ ] the further design: user's experience
+
+> <h5>Front Desk</h5>
+
+>> - [x] the use of Vue.js
+>> - [ ] the perfect use of components and modular programming
+>> - [x] the use of api
+>> - [x] image compress and clip function
+>> - [ ] further develope the clip function the performance
+>> - [x] write a stateMachine for the control of states
+>> - [x] ensure the usability of the front desk
+>> - [ ] errorHandler module(consoleError haha!)
+>> - [ ] the proformance of the website
+
+> <h5>End Desk</h5>
+
+>> - [x] the use of express
+>> - [ ] further use of express
+>> - [x] image conpress and the use of thumbnail
+>> - [x] the development of listManager(simple version of database)
+
 <h3>> the following content consists of three major parts:</h3>
 <ul>
   <li>the design and art work:  <i>brief description of the design of the webpages</i></li>
   <li>the front desk:  <i>the major part, detailed information</i></li>
   <li>the end desk:  <i>nodejs - express</i></li>  
  </ul>
-
+ 
 
 <h4>> PART1: Design</h4>
 <img src="http://imgsrc.baidu.com/forum/w%3D580/sign=65442bf6acec08fa260013af69ef3d4d/fef6b4d12f2eb9380917f5bbd9628535e5dd6f17.jpg" />
