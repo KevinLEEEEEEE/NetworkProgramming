@@ -472,6 +472,7 @@ const _fileManager = {
   </li>
 </ol>
 
+<img src="http://imgsrc.baidu.com/forum/w%3D580/sign=0b6bde799e45d688a302b2ac94c37dab/e619ec061d950a7bca9e598e06d162d9f3d3c9e7.jpg" />
 
 <h4>After all, I find a billion, a trillion loopholes in my programming ability, so I decided to "relearn" most of the existing knowledge and see you in summer vacation!</h4>
 
