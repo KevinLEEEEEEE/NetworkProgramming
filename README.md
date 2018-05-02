@@ -463,7 +463,7 @@ const _fileManager = {
   </li>
     <li>
     <p>Q: Where is the search function?</p>
-    <p>A: No that function, OK! This an assignment, not my "dachuang", and the result of color analysising didn't meet my expectation, so I decided to cut off that function, or the total code lines are to meet 2000, that became hard to manage</p>
+    <p>A: No that function, OK! This an assignment, not my "dachuang", and the result of color analysising didn't meet my expectation, so I decided to cut off that function, or the total code are to meet 2000 lines, that became hard to manage due to my short and shallow plan</p>
   </li>
 </ol>
 
