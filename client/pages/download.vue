@@ -43,6 +43,8 @@ export default {
             md5,
           });
 
+          console.log(author);
+
           this.insertImgBox({
             author,
             imgName,

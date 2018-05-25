@@ -379,7 +379,7 @@ export default {
         httpManager.sendImage(this.package, this.progress)
           .then((resolve) => {
             // remove node with animation
-            listManager.add(author, imgName, resolve.body, tags);
+            // listManager.add(author, imgName, resolve.body, tags);
             this.destory();
           }, (reject) => {
             // do not remove the node, send a error message

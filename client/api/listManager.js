@@ -40,12 +40,12 @@ const _listManager = {
     md5ToTags[md5] = tags;
   },
   ttm(tags, md5) {
-    tags.forEach((tag) => {
-      if (!(tag in tagsToMd5)) {
-        tagsToMd5[tags] = [];
-      }
-      tagsToMd5[tags].push(md5);
-    });
+    // tags.forEach((tag) => {
+    //   if (!(tag in tagsToMd5)) {
+    //     tagsToMd5[tags] = [];
+    //   }
+    //   tagsToMd5[tags].push(md5);
+    // });
   },
 };
 
